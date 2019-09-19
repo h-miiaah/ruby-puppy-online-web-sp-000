@@ -5,23 +5,23 @@ class Dog
 
   attr_accessor :name
 
-  def initialize(name)
-    @name = name
-    @@all << self
+  def initialize(name) # initialize each dog created with a name.
+    @name = name # set name instance variable equal to the name parameter in the initialize method.
+    @@all << self # adds every instance of a dog created (self) to the @@all class variable array.
   end
 
-  def self.all
-    @@all
+  def self.all # class method self.all.
+    @@all # displays the class variable array of @@all (all dogs created).
   end
 
-  def self.print_all
-    @@all.each do |dog|
-      puts dog.name
+  def self.print_all # class method self.print_all.
+    @@all.each do |dog| # iterates through the @@all array.
+      puts dog.name # puts to the screen each dogs name.
     end
   end
 
-  def self.clear_all
-      @@all.clear
+  def self.clear_all # class method self.clear_all.
+      @@all.clear # clears out the @@all array.
   end
 
 end
