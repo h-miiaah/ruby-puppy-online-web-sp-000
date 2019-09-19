@@ -7,7 +7,7 @@ class Dog
 
   def initialize(name) # initialize each dog created with a name.
     @name = name # set name instance variable equal to the name parameter in the initialize method.
-    @@all << self # adds every instance of a dog created (self) to the @@all class variable array.
+    save
   end
 
   def self.all # class method self.all.
