@@ -20,6 +20,10 @@ class Dog
     end
   end
 
+  def save
+      @@all << self
+  end
+
   def self.clear_all # class method self.clear_all.
       @@all.clear # clears out the @@all array.
   end
